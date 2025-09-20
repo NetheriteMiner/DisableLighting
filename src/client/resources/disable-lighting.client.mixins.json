@@ -1,0 +1,11 @@
+{
+	"required": true,
+    "package": "tk.netheriteminer.mixin.client",
+	"compatibilityLevel": "JAVA_21",
+	"client": [
+        "LightmapMixin"
+	],
+	"injectors": {
+		"defaultRequire": 1
+	}
+}

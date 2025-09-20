@@ -1,0 +1,33 @@
+{
+	"schemaVersion": 1,
+	"id": "disable-lighting",
+	"version": "${version}",
+	"name": "Disable Lighting",
+	"description": "Disables the lighting engine, resulting in a fullbright that also gives higher performance.",
+	"authors": [
+		"NetheriteMiner"
+	],
+	"contact": {
+		"sources": "https://github.com/NetheriteMiner/DisableLighting"
+	},
+	"license": "CC0-1.0",
+	"icon": "assets/disable-lighting/icon.png",
+	"environment": "client",
+	"entrypoints": {
+		"client": [
+          "tk.netheriteminer.DisableLightingClient"
+		]
+	},
+	"mixins": [
+		{
+			"config": "disable-lighting.client.mixins.json",
+			"environment": "client"
+		}
+	],
+	"depends": {
+		"fabricloader": ">=0.17.2",
+		"minecraft": "1.21.x",
+		"java": ">=21",
+		"fabric-api": "*"
+	}
+}
